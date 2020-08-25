@@ -1,11 +1,13 @@
-export let mixed = {
+var mixed = {
     default: '${path} geçerli değil',
     required: '${path} zorunlu alandır',
     oneOf: '${path} değeri , örnekteki değerler gibi olmalıdır: ${values}',
     notOneOf: '${path} değeri, örnekteki değerler gibi olmamalıdır: ${values}',
 };
 
-export let string = {
+exports.mixed = mixed;
+
+var string = {
     length: '${path} değeri ${length} karakter olmalıdır',
     min: '${path} değeri minimum ${min} karakter olmalıdır',
     max: '${path} değeri maksimum ${max} karakter olmalıdır',
@@ -18,7 +20,9 @@ export let string = {
     uppercase: '${path} büyük harf olmalıdır',
 };
 
-export let number = {
+exports.string = string;
+
+var number = {
     min: '${path} değeri ${min} değerinden büyük veya eşit olmalıdır',
     max: '${path} değeri ${max} değerinden  küçük veya eşit olmalıdır',
     lessThan: '${path} değeri  ${less} değerinden daha az olmalıdır',
@@ -29,24 +33,32 @@ export let number = {
     integer: '${path} değeri integer olmalıdır.',
 };
 
-export let date = {
+exports.number = number;
+
+var date = {
     min: '${path} tarihi ${min} tarihinden sonra olmalıdır',
     max: '${path} tarihi ${max} tarihinden önce olmalıdır',
 };
 
+exports.date = date;
 
-export let boolean = {};
+var boolean = {};
 
-export let object = {
+exports.boolean = boolean;
+
+var object = {
     noUnknown: '${path} için belirlenemeyen key değerleri: ${unknown}',
 };
 
-export let array = {
+exports.object = object;
+
+var array = {
     min: '${path} array minimum ${min} değer almalıdır',
     max: '${path} array değerinden daha az veya eşit değer almalıdır',
 };
+exports.array = array;
 
-export default {
+module.exports = {
     mixed,
     string,
     number,
@@ -55,6 +67,3 @@ export default {
     array,
     boolean,
 };
-
-
-
