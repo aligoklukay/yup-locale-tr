@@ -1,0 +1,19 @@
+{
+  "name": "yup-locale-tr",
+  "version": "1.0.0",
+  "description": "Turkish translation for default yup messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agoklukay/yup-locale-tr.git"
+  },
+  "author": "Ali Göklükay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agoklukay/yup-locale-tr/issues"
+  },
+  "homepage": "https://github.com/agoklukay/yup-locale-tr#readme"
+}
